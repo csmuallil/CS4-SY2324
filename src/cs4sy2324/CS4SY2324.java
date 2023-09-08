@@ -26,6 +26,13 @@ public class CS4SY2324 {
         String anime3 = "Boku No Hero Academia";
         double rating3 = 4.1;
         int noOfSeasons3 = 5;
+
+        double totalRating = rating1 + rating2 + rating3;
+        double averageRating = totalRating/3;
+
+        boolean ratingComparison = (rating2 > rating1) && (rating2 > rating3);
+        
+        boolean seasonComparison = (noOfSeasons1 == noOfSeasons2) || (noOfSeasons1 == noOfSeasons3) || (noOfSeasons2 == noOfSeasons3);
         
         System.out.println("Anime name: " + anime1);
         System.out.println("Rating: " + rating1);
@@ -42,6 +49,13 @@ public class CS4SY2324 {
         System.out.println("Anime name: " + anime3);
         System.out.println("Rating: " + rating3);
         System.out.println("Number of Seasons: " + noOfSeasons3);
+        
+        System.out.println("");
+        
+        System.out.println("Average Rating of All Animes: " + averageRating);
+        
+        System.out.println("Attack on Titan is the anime with the highest rating: " + ratingComparison);
+        System.out.println("There are at least two animes with the same number of seasons: " + seasonComparison);
     }
     
 }
